@@ -1,0 +1,25 @@
+{
+    "name": "rong",
+    "short_name": "rong",
+    "start_url": "index.html",
+    "display": "standalone",
+    "background_color": "#2196f3",
+    "description": "rong的个人主页",
+    "theme_color": "blue",
+    "icons": [
+      {
+        "src": "https://huaban.com/go/?pin_id=1771669878",
+        "sizes": "144x144",
+        "type": "image/png"
+      }
+    ],
+    "related_applications": [
+      {
+        "platform": "web"
+      },
+      {
+        "platform": "play",
+        "url": "https://play.google.com/store/apps/details?id=cheeaun.hackerweb"
+      }
+    ]
+  }
