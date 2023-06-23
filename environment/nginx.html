@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Linux中安装nginx | Cheng blog</title>
+    <meta name="generator" content="VuePress 1.8.3">
+    <link rel="icon" href="/https://s2.ax1x.com/2019/11/18/MsjPiT.jpg">
+    <meta name="description" content="我的个人网站">
+    
+    <link rel="preload" href="/assets/css/0.styles.fa3dfa76.css" as="style"><link rel="preload" href="/assets/js/app.daf77b36.js" as="script"><link rel="preload" href="/assets/js/2.0d37371f.js" as="script"><link rel="preload" href="/assets/js/39.41d6e69a.js" as="script"><link rel="prefetch" href="/assets/js/10.e381c51a.js"><link rel="prefetch" href="/assets/js/11.acda7496.js"><link rel="prefetch" href="/assets/js/12.58107eb6.js"><link rel="prefetch" href="/assets/js/13.bbee3a6c.js"><link rel="prefetch" href="/assets/js/14.ad96dd73.js"><link rel="prefetch" href="/assets/js/15.8b0ea883.js"><link rel="prefetch" href="/assets/js/16.5cbd1c63.js"><link rel="prefetch" href="/assets/js/17.1ffbf65c.js"><link rel="prefetch" href="/assets/js/18.51a09faf.js"><link rel="prefetch" href="/assets/js/19.6d3c366b.js"><link rel="prefetch" href="/assets/js/20.2856006e.js"><link rel="prefetch" href="/assets/js/21.674c3575.js"><link rel="prefetch" href="/assets/js/22.ff039523.js"><link rel="prefetch" href="/assets/js/23.6e77d2a8.js"><link rel="prefetch" href="/assets/js/24.940396ae.js"><link rel="prefetch" href="/assets/js/25.0ee28eeb.js"><link rel="prefetch" href="/assets/js/26.aaf10ad1.js"><link rel="prefetch" href="/assets/js/27.c2c5f313.js"><link rel="prefetch" href="/assets/js/28.4c2fe5aa.js"><link rel="prefetch" href="/assets/js/29.5cb0717a.js"><link rel="prefetch" href="/assets/js/3.9017ad84.js"><link rel="prefetch" href="/assets/js/30.d296b319.js"><link rel="prefetch" href="/assets/js/31.06dd0b70.js"><link rel="prefetch" href="/assets/js/32.b1b57fa1.js"><link rel="prefetch" href="/assets/js/33.cdb218f0.js"><link rel="prefetch" href="/assets/js/34.5c175316.js"><link rel="prefetch" href="/assets/js/35.040f3650.js"><link rel="prefetch" href="/assets/js/36.b431aeb2.js"><link rel="prefetch" href="/assets/js/37.3d1fbe6f.js"><link rel="prefetch" href="/assets/js/38.9e41defa.js"><link rel="prefetch" href="/assets/js/4.2f92ee14.js"><link rel="prefetch" href="/assets/js/40.9d86158e.js"><link rel="prefetch" href="/assets/js/41.2ca56466.js"><link rel="prefetch" href="/assets/js/42.853f4cde.js"><link rel="prefetch" href="/assets/js/43.3f8b8343.js"><link rel="prefetch" href="/assets/js/44.f77c1364.js"><link rel="prefetch" href="/assets/js/45.394cd2b2.js"><link rel="prefetch" href="/assets/js/5.40986c20.js"><link rel="prefetch" href="/assets/js/6.3a1eb438.js"><link rel="prefetch" href="/assets/js/7.106026d3.js"><link rel="prefetch" href="/assets/js/8.815c78f5.js"><link rel="prefetch" href="/assets/js/9.b19700e0.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.fa3dfa76.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">Cheng blog</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端框架" class="dropdown-title"><span class="title">前端框架</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端框架" class="mobile-dropdown-title"><span class="title">前端框架</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/accumulate/vue/v-03.html" class="nav-link">
+  vue
+</a></li><li class="dropdown-item"><!----> <a href="/accumulate/a.html" class="nav-link">
+  react
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="JavaScript" class="dropdown-title"><span class="title">JavaScript</span> <span class="arrow down"></span></button> <button type="button" aria-label="JavaScript" class="mobile-dropdown-title"><span class="title">JavaScript</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/environment/a-2.html" class="nav-link">
+  javascript
+</a></li><li class="dropdown-item"><!----> <a href="/design/01.html" class="nav-link">
+  javascript设计模式
+</a></li></ul></div></div><div class="nav-item"><a href="/typeScript/t-01.html" class="nav-link">
+  typescript
+</a></div><div class="nav-item"><a href="https://github.com/Rong-CC" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端框架" class="dropdown-title"><span class="title">前端框架</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端框架" class="mobile-dropdown-title"><span class="title">前端框架</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/accumulate/vue/v-03.html" class="nav-link">
+  vue
+</a></li><li class="dropdown-item"><!----> <a href="/accumulate/a.html" class="nav-link">
+  react
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="JavaScript" class="dropdown-title"><span class="title">JavaScript</span> <span class="arrow down"></span></button> <button type="button" aria-label="JavaScript" class="mobile-dropdown-title"><span class="title">JavaScript</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/environment/a-2.html" class="nav-link">
+  javascript
+</a></li><li class="dropdown-item"><!----> <a href="/design/01.html" class="nav-link">
+  javascript设计模式
+</a></li></ul></div></div><div class="nav-item"><a href="/typeScript/t-01.html" class="nav-link">
+  typescript
+</a></div><div class="nav-item"><a href="https://github.com/Rong-CC" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>JavaScript 进阶</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/environment/a-2.html" class="sidebar-link">闭包原理</a></li><li><a href="/environment/a-3.html" class="sidebar-link">async/await异步原理</a></li><li><a href="/environment/a-4.html" class="sidebar-link">Eventloop 事件循环</a></li><li><a href="/environment/http.html" class="sidebar-link">HTTP与HTTPS</a></li><li><a href="/environment/a-1.html" class="sidebar-link">github上传使用ssh报错</a></li><li><a href="/environment/jsRex.html" class="sidebar-link">常用正则</a></li><li><a href="/environment/rtmp.html" class="sidebar-link">RTMP流媒体播放</a></li><li><a href="/environment/excel.html" class="sidebar-link">excel导出获取headers名称</a></li><li><a href="/environment/js-tool.html" class="sidebar-link">js工具函数</a></li><li><a href="/environment/a-6.html" class="sidebar-link">目录描述</a></li><li><a href="/environment/vscode-header.html" class="sidebar-link">VsCode 注释头部配置</a></li><li><a href="/environment/mongoldb-setting.html" class="sidebar-link">MonggolDB MAC安装</a></li><li><a href="/environment/commonJs.html" class="sidebar-link">common和ADM</a></li><li><a href="/environment/git.html" class="sidebar-link">git</a></li><li><a href="/environment/record.html" class="sidebar-link">问题记录</a></li><li><a href="/environment/codeNorm.html" class="sidebar-link">代码规范定义</a></li><li><a href="/environment/nginx.html" aria-current="page" class="active sidebar-link">nginx常用命令</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/environment/webpack/w-01.html" class="sidebar-link">webpack热更新</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h3 id="linux中安装nginx"><a href="#linux中安装nginx" class="header-anchor">#</a> Linux中安装nginx</h3> <p>nginx 常用的工具</p> <div class="language- extra-class"><pre class="language-text"><code>yum -y install gcc gcc-c++ autoconf pcre-devel make automake
+yum -y install wget httpd-tools vim
+</code></pre></div><p>通过yum 源来命令下载   <code>yum install nginx</code></p> <p><code>nginx -v</code>    查看 nginx 是否存在</p> <p><code>nginx -t</code>  检查nginx 的语法是否存在错误</p> <p><code>ngnix -s reload</code>   重新载入配置文件</p> <p><code>systemctl restart nginx.service</code>  重启nginx</p> <p><code>nginx -s stop</code>  停止服务</p> <p><code>nginx -s quit</code>  从容停止服务</p> <p><code>ps -ef | grep nginx</code>  查询nginx 主进程</p> <p><code>killall nginx</code>  杀死全部进程</p> <p><code>netstat -tlnp</code>  查看端口号占用情况</p> <p><strong>nginx 一些基本配置</strong></p> <div class="language-nginx extra-class"><pre class="language-nginx"><code><span class="token comment">#运行用户，默认即是nginx，可以不进行设置</span>
+<span class="token directive"><span class="token keyword">user</span>  nginx</span><span class="token punctuation">;</span>
+<span class="token comment">#Nginx进程，一般设置为和CPU核数一样</span>
+<span class="token directive"><span class="token keyword">worker_processes</span>  <span class="token number">1</span></span><span class="token punctuation">;</span>   
+<span class="token comment">#错误日志存放目录</span>
+<span class="token directive"><span class="token keyword">error_log</span>  /var/log/nginx/error.log warn</span><span class="token punctuation">;</span>
+<span class="token comment">#进程pid存放位置</span>
+<span class="token directive"><span class="token keyword">pid</span>        /var/run/nginx.pid</span><span class="token punctuation">;</span>
+
+
+<span class="token directive"><span class="token keyword">events</span></span> <span class="token punctuation">{</span>
+    <span class="token directive"><span class="token keyword">worker_connections</span>  <span class="token number">1024</span></span><span class="token punctuation">;</span> <span class="token comment"># 单个后台进程的最大并发数</span>
+<span class="token punctuation">}</span>
+
+
+<span class="token directive"><span class="token keyword">http</span></span> <span class="token punctuation">{</span>
+    <span class="token directive"><span class="token keyword">include</span>       /etc/nginx/mime.types</span><span class="token punctuation">;</span>   <span class="token comment">#文件扩展名与类型映射表</span>
+    <span class="token directive"><span class="token keyword">default_type</span>  application/octet-stream</span><span class="token punctuation">;</span>  <span class="token comment">#默认文件类型</span>
+    <span class="token comment">#设置日志模式</span>
+    <span class="token directive"><span class="token keyword">log_format</span>  main  <span class="token string">'<span class="token variable">$remote_addr</span> - <span class="token variable">$remote_user</span> [<span class="token variable">$time_local]</span> &quot;<span class="token variable">$request</span>&quot; '</span>
+                      <span class="token string">'<span class="token variable">$status</span> <span class="token variable">$body_bytes_sent</span> &quot;<span class="token variable">$http_referer</span>&quot; '</span>
+                      <span class="token string">'&quot;<span class="token variable">$http_user_agent</span>&quot; &quot;<span class="token variable">$http_x_forwarded_for</span>&quot;'</span></span><span class="token punctuation">;</span>
+
+    <span class="token directive"><span class="token keyword">access_log</span>  /var/log/nginx/access.log  main</span><span class="token punctuation">;</span>   <span class="token comment">#nginx访问日志存放位置</span>
+
+    <span class="token directive"><span class="token keyword">sendfile</span>        <span class="token boolean">on</span></span><span class="token punctuation">;</span>   <span class="token comment">#开启高效传输模式</span>
+    <span class="token comment">#tcp_nopush     on;    #减少网络报文段的数量</span>
+
+    <span class="token directive"><span class="token keyword">keepalive_timeout</span>  <span class="token number">65</span></span><span class="token punctuation">;</span>  <span class="token comment">#保持连接的时间，也叫超时时间</span>
+
+    <span class="token comment">#gzip  on;  #开启gzip压缩</span>
+
+    <span class="token directive"><span class="token keyword">include</span> /etc/nginx/conf.d/*.conf</span><span class="token punctuation">;</span> <span class="token comment">#包含的子配置项位置和文件</span>
+</code></pre></div><p>子文件的配置项，通过设置include子文件配置 进行端口 和文件映射路径设置</p> <p>配置完 <font color="red">阿里云要进行安全组配置端口</font></p> <div class="language-nginx extra-class"><pre class="language-nginx"><code><span class="token directive"><span class="token keyword">server</span></span> <span class="token punctuation">{</span>
+    <span class="token directive"><span class="token keyword">listen</span>       <span class="token number">80</span></span><span class="token punctuation">;</span>   <span class="token comment">#配置监听端口</span>
+    <span class="token directive"><span class="token keyword">server_name</span>  localhost</span><span class="token punctuation">;</span>  //配置域名
+
+    <span class="token comment">#charset koi8-r;     </span>
+    <span class="token comment">#access_log  /var/log/nginx/host.access.log  main;</span>
+
+    <span class="token directive"><span class="token keyword">location</span> /</span> <span class="token punctuation">{</span>
+        <span class="token directive"><span class="token keyword">root</span>   /usr/share/nginx/html</span><span class="token punctuation">;</span>     <span class="token comment">#服务默认启动目录</span>
+        <span class="token directive"><span class="token keyword">index</span>  index.html index.htm</span><span class="token punctuation">;</span>    <span class="token comment">#默认访问文件</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token comment">#error_page  404              /404.html;   # 配置404页面</span>
+
+    <span class="token comment"># redirect server error pages to the static page /50x.html</span>
+    <span class="token comment">#</span>
+    <span class="token directive"><span class="token keyword">error_page</span>   <span class="token number">500</span> <span class="token number">502</span> <span class="token number">503</span> <span class="token number">504</span>  /50x.html</span><span class="token punctuation">;</span>   <span class="token comment">#错误状态码的显示页面，配置后需要重启</span>
+    <span class="token directive"><span class="token keyword">location</span> = /50x.html</span> <span class="token punctuation">{</span>
+        <span class="token directive"><span class="token keyword">root</span>   /usr/share/nginx/html</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token comment"># proxy the PHP scripts to Apache listening on 127.0.0.1:80</span>
+    <span class="token comment">#</span>
+    <span class="token comment">#location ~ \.php$ {</span>
+    <span class="token comment">#    proxy_pass   http://127.0.0.1;</span>
+    <span class="token comment">#}</span>
+
+    <span class="token comment"># pass the PHP scripts to FastCGI server listening on 127.0.0.1:9000</span>
+    <span class="token comment">#</span>
+    <span class="token comment">#location ~ \.php$ {</span>
+    <span class="token comment">#    root           html;</span>
+    <span class="token comment">#    fastcgi_pass   127.0.0.1:9000;</span>
+    <span class="token comment">#    fastcgi_index  index.php;</span>
+    <span class="token comment">#    fastcgi_param  SCRIPT_FILENAME  /scripts$fastcgi_script_name;</span>
+    <span class="token comment">#    include        fastcgi_params;</span>
+    <span class="token comment">#}</span>
+
+    <span class="token comment"># deny access to .htaccess files, if Apache's document root</span>
+    <span class="token comment"># concurs with nginx's one</span>
+    <span class="token comment">#</span>
+    <span class="token comment">#location ~ /\.ht {</span>
+    <span class="token comment">#    deny  all;</span>
+    <span class="token comment">#}</span>
+<span class="token punctuation">}</span>
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/environment/codeNorm.html" class="prev">
+        代码规范定义
+      </a></span> <span class="next"><a href="/environment/webpack/w-01.html">
+        webpack热更新
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.daf77b36.js" defer></script><script src="/assets/js/2.0d37371f.js" defer></script><script src="/assets/js/39.41d6e69a.js" defer></script>
+  </body>
+</html>

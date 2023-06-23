@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>scroller  ios 13.0以上滚动回到顶点问题 | Cheng blog</title>
+    <meta name="generator" content="VuePress 1.8.3">
+    <link rel="icon" href="/https://s2.ax1x.com/2019/11/18/MsjPiT.jpg">
+    <meta name="description" content="我的个人网站">
+    
+    <link rel="preload" href="/assets/css/0.styles.fa3dfa76.css" as="style"><link rel="preload" href="/assets/js/app.daf77b36.js" as="script"><link rel="preload" href="/assets/js/2.0d37371f.js" as="script"><link rel="preload" href="/assets/js/17.1ffbf65c.js" as="script"><link rel="prefetch" href="/assets/js/10.e381c51a.js"><link rel="prefetch" href="/assets/js/11.acda7496.js"><link rel="prefetch" href="/assets/js/12.58107eb6.js"><link rel="prefetch" href="/assets/js/13.bbee3a6c.js"><link rel="prefetch" href="/assets/js/14.ad96dd73.js"><link rel="prefetch" href="/assets/js/15.8b0ea883.js"><link rel="prefetch" href="/assets/js/16.5cbd1c63.js"><link rel="prefetch" href="/assets/js/18.51a09faf.js"><link rel="prefetch" href="/assets/js/19.6d3c366b.js"><link rel="prefetch" href="/assets/js/20.2856006e.js"><link rel="prefetch" href="/assets/js/21.674c3575.js"><link rel="prefetch" href="/assets/js/22.ff039523.js"><link rel="prefetch" href="/assets/js/23.6e77d2a8.js"><link rel="prefetch" href="/assets/js/24.940396ae.js"><link rel="prefetch" href="/assets/js/25.0ee28eeb.js"><link rel="prefetch" href="/assets/js/26.aaf10ad1.js"><link rel="prefetch" href="/assets/js/27.c2c5f313.js"><link rel="prefetch" href="/assets/js/28.4c2fe5aa.js"><link rel="prefetch" href="/assets/js/29.5cb0717a.js"><link rel="prefetch" href="/assets/js/3.9017ad84.js"><link rel="prefetch" href="/assets/js/30.d296b319.js"><link rel="prefetch" href="/assets/js/31.06dd0b70.js"><link rel="prefetch" href="/assets/js/32.b1b57fa1.js"><link rel="prefetch" href="/assets/js/33.cdb218f0.js"><link rel="prefetch" href="/assets/js/34.5c175316.js"><link rel="prefetch" href="/assets/js/35.040f3650.js"><link rel="prefetch" href="/assets/js/36.b431aeb2.js"><link rel="prefetch" href="/assets/js/37.3d1fbe6f.js"><link rel="prefetch" href="/assets/js/38.9e41defa.js"><link rel="prefetch" href="/assets/js/39.41d6e69a.js"><link rel="prefetch" href="/assets/js/4.2f92ee14.js"><link rel="prefetch" href="/assets/js/40.9d86158e.js"><link rel="prefetch" href="/assets/js/41.2ca56466.js"><link rel="prefetch" href="/assets/js/42.853f4cde.js"><link rel="prefetch" href="/assets/js/43.3f8b8343.js"><link rel="prefetch" href="/assets/js/44.f77c1364.js"><link rel="prefetch" href="/assets/js/45.394cd2b2.js"><link rel="prefetch" href="/assets/js/5.40986c20.js"><link rel="prefetch" href="/assets/js/6.3a1eb438.js"><link rel="prefetch" href="/assets/js/7.106026d3.js"><link rel="prefetch" href="/assets/js/8.815c78f5.js"><link rel="prefetch" href="/assets/js/9.b19700e0.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.fa3dfa76.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">Cheng blog</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端框架" class="dropdown-title"><span class="title">前端框架</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端框架" class="mobile-dropdown-title"><span class="title">前端框架</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/accumulate/vue/v-03.html" class="nav-link">
+  vue
+</a></li><li class="dropdown-item"><!----> <a href="/accumulate/a.html" class="nav-link">
+  react
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="JavaScript" class="dropdown-title"><span class="title">JavaScript</span> <span class="arrow down"></span></button> <button type="button" aria-label="JavaScript" class="mobile-dropdown-title"><span class="title">JavaScript</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/environment/a-2.html" class="nav-link">
+  javascript
+</a></li><li class="dropdown-item"><!----> <a href="/design/01.html" class="nav-link">
+  javascript设计模式
+</a></li></ul></div></div><div class="nav-item"><a href="/typeScript/t-01.html" class="nav-link">
+  typescript
+</a></div><div class="nav-item"><a href="https://github.com/Rong-CC" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端框架" class="dropdown-title"><span class="title">前端框架</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端框架" class="mobile-dropdown-title"><span class="title">前端框架</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/accumulate/vue/v-03.html" class="nav-link">
+  vue
+</a></li><li class="dropdown-item"><!----> <a href="/accumulate/a.html" class="nav-link">
+  react
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="JavaScript" class="dropdown-title"><span class="title">JavaScript</span> <span class="arrow down"></span></button> <button type="button" aria-label="JavaScript" class="mobile-dropdown-title"><span class="title">JavaScript</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/environment/a-2.html" class="nav-link">
+  javascript
+</a></li><li class="dropdown-item"><!----> <a href="/design/01.html" class="nav-link">
+  javascript设计模式
+</a></li></ul></div></div><div class="nav-item"><a href="/typeScript/t-01.html" class="nav-link">
+  typescript
+</a></div><div class="nav-item"><a href="https://github.com/Rong-CC" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>vue</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/accumulate/vue/v-01.html" class="sidebar-link">VUE框架</a></li><li><a href="/accumulate/vue/v-02.html" class="sidebar-link">VUE原理和双向数据绑定</a></li><li><a href="/accumulate/vue/v-06.html" class="sidebar-link">new VUE()做了什么</a></li><li><a href="/accumulate/vue/v-03.html" class="sidebar-link">你可能不知道vue api</a></li><li><a href="/accumulate/vue/v-04.html" class="sidebar-link">vueCli3.0+TypeScript的项目搭建</a></li><li><a href="/accumulate/vue/v-05.html" class="sidebar-link">生产环境配置</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>iview</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/accumulate/iview/i-01.html" class="sidebar-link">iview  DatePicker  日期限制问题</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>Vux</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/accumulate/vux/x-01.html" aria-current="page" class="active sidebar-link">scroller  ios 13.0以上滚动回到顶点问题</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/accumulate/vux/x-02.html" class="sidebar-link">h5 + Cordova 获取定位</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h3 id="scroller-ios-13-0以上滚动回到顶点问题"><a href="#scroller-ios-13-0以上滚动回到顶点问题" class="header-anchor">#</a> scroller  ios 13.0以上滚动回到顶点问题</h3> <p>​	 因为vux 不更新scroller组件存在很多问题，在ios13版本的存在一个滚动问题,当快速滚动时存在回到顶部问题</p> <p>经过百度查证了是ios13获取transform的结果和老版本不一样</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code>老版本：
+<span class="token string">'matrix(1, -2.4492935982947064, 2.4492935982947064, 1, 0, 19.48200035095215)'</span>
+
+<span class="token comment">//新版本</span>
+<span class="token string">'matrix(1, -2.4492935982947064e-16, 2.4492935982947064e-16, 1, 0, 19.48200035095215)'</span>
+</code></pre></div><p><strong>解决办法：将\node_modules_vux-xscroll@3.1.12@vux-xscroll\build\cmd\simulate-scroll.js下的getScrollTop方法里面的正则表达式替换成下面（/[-\d.*\d*e-\d]+/g ）的就可以了。</strong></p> <div class="language-vue extra-class"><pre class="language-vue"><code> getScrollTop: function() {
+    // var transY = window.getComputedStyle(this.container)[transform].match(/[-\d\.*\d*]+/g);
+    var transY = window.getComputedStyle(this.container)[transform].match(/[-\d\.*\d*e\-\d]+/g);
+    return transY ? Math.round(transY[5]) === 0 ? 0 : -Math.round(transY[5]) : 0;
+  }
+
+</code></pre></div><h3 id="scroller-切换不初始化问题"><a href="#scroller-切换不初始化问题" class="header-anchor">#</a> Scroller  切换不初始化问题</h3> <p>当scroller  切换了类别时，他的滚动不会初始化位置还是停留再之前的位置，</p> <p>​	http://xscroll.github.io/node_modules/xscroll/doc/XScroll.html#scrollTop</p> <p>​	最好放在nextTick方法里面</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">$nextTick</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+     <span class="token keyword">this</span><span class="token punctuation">.</span>$refs<span class="token punctuation">.</span>scroller<span class="token punctuation">.</span>_xscroll<span class="token punctuation">.</span><span class="token function">scrollTop</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span> <span class="token comment">// 滚动位置初始化</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre></div><p>​</p></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/accumulate/iview/i-01.html" class="prev">
+        iview  DatePicker  日期限制问题
+      </a></span> <span class="next"><a href="/accumulate/vux/x-02.html">
+        h5 + Cordova 获取定位
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.daf77b36.js" defer></script><script src="/assets/js/2.0d37371f.js" defer></script><script src="/assets/js/17.1ffbf65c.js" defer></script>
+  </body>
+</html>
